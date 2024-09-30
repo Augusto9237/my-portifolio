@@ -11,20 +11,18 @@ import {
 
 export function CarouselProject() {
     return (
-        <Carousel className="w-full max-w-xs">
+        <Carousel className="w-full">
             <CarouselContent>
                 {Array.from({ length: 5 }).map((_, index) => (
                     <CarouselItem key={index}>
-                        <div className="p-1">
-                            <div className="bg-red-500 w-full h-[300px] rounded-md">
-                                <span className="text-4xl font-semibold">{index + 1}</span>
-                            </div>
+                        <div className="bg-red-500 w-full h-[300px] rounded-md">
+                            <span className="text-4xl font-semibold">{index + 1}</span>
                         </div>
                     </CarouselItem>
                 ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="bg-transparent hover:bg-transparent text-white/80 hover:text-white border-none -left-8" />
+            <CarouselNext className="bg-transparent hover:bg-transparent text-white/80 hover:text-white border-none -right-8" />
         </Carousel>
     )
 }
