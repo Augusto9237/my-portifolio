@@ -52,7 +52,7 @@ export function FormContactMe() {
                         <FormItem>
                             <FormLabel>Nome</FormLabel>
                             <FormControl>
-                                <Input placeholder="Digite seu nomes" {...field} />
+                                <Input placeholder="Digite seu nome" {...field} />
                             </FormControl>
                             <FormMessage />
                         </FormItem>
