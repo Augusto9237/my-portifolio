@@ -1,28 +1,15 @@
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-  } from "@/components/ui/card"
-  
+import CardMessages from "./_components/card-messages";
+
 export default function Messages() {
 
     return (
-        <div>
-            <Card>
-                <CardHeader>
-                    <CardTitle>Card Title</CardTitle>
-                    <CardDescription>Card Description</CardDescription>
-                </CardHeader>
-                <CardContent>
-                    <p>Card Content</p>
-                </CardContent>
-                <CardFooter>
-                    <p>Card Footer</p>
-                </CardFooter>
-            </Card>
+        <div className="grid grid-cols-3 p-5 gap-5">
+            <CardMessages />
+            <CardMessages />
+            <CardMessages />
+            <CardMessages />
+            <CardMessages />
+            <CardMessages />
 
         </div>
     )

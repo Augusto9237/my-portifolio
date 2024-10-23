@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
+import "../globals.css";
 
 
 const geistSans = localFont({
-    src: "./fonts/GeistVF.woff",
+    src: "../fonts/GeistVF.woff",
     variable: "--font-geist-sans",
     weight: "100 900",
 });
 const geistMono = localFont({
-    src: "./fonts/GeistMonoVF.woff",
+    src: "../fonts/GeistMonoVF.woff",
     variable: "--font-geist-mono",
     weight: "100 900",
 });
@@ -23,9 +23,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang="en" className="scroll-smooth">
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+                className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-950`}
             >
-                <div className="flex min-h-screen flex-col bg-zinc-950 ">
+                <div className="flex min-h-screen flex-col  max-w-screen-lg mx-auto ">
                     {children}
                     <footer className="max-w-screen-lg mx-auto w-full p-5">
                         <span className="text-zinc-400 text-sm">
