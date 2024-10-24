@@ -9,7 +9,7 @@ import {
 
 export default function CardMessages() {
     return (
-        <Card>
+        <Card className="bg-zinc-200">
             <CardHeader>
                 <CardTitle>name</CardTitle>
                 <CardDescription>email</CardDescription>

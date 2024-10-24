@@ -7,29 +7,6 @@ import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
 export default function Home() {
     return (
         <section id="home" className="min-h-screen text-white flex flex-col w-full max-w-screen-lg mx-auto ">
-            <header className="h-[70px] w-full  text-zinc-200 items-center flex justify-center">
-                <div className="flex items-center justify-between w-full">
-                    <Link href="#home" >
-                        Home
-                    </Link>
-                    <Link href="#projects" >
-                        Projetos
-                    </Link>
-                    <Link href="#about" >
-                        Sobre mim
-                    </Link>
-                    <Link href="#contact" >
-                        Contato
-                    </Link>
-
-                    <div className="flex gap-4">
-                        <BsLinkedin />
-                        <BsGithub />
-                        <BsInstagram />
-                    </div>
-                </div>
-
-            </header>
 
             <main className="flex mx-auto w-full max-w-screen-lg h-full flex-1 items-center justify-center">
                 <div className="w-full space-y-5">

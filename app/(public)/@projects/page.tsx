@@ -9,7 +9,7 @@ import { SiPrisma } from "react-icons/si";
 export default function Projects() {
     return (
         <section id="projects" className="h-full min-h-screen text-white">
-            <header className="flex flex-col gap-2 justify-center mt-28 w-full max-w-screen-lg mx-auto">
+            <header className="flex flex-col gap-2 justify-center mt-28">
                 <h1 className="font-bold text-3xl uppercase">Featured Projects</h1>
                 <p className="text-zinc-500">
                     Here are some of the selected projects that showcase my passion for front-end development.

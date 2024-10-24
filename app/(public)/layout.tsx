@@ -6,6 +6,8 @@ import Home from "./@home/page";
 import { Separator } from "@/components/ui/separator";
 import About from "./@about/page";
 import Contact from "./@contact/page";
+import Link from "next/link";
+import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
 
 const geistSans = localFont({
   src: "../fonts/GeistVF.woff",
@@ -27,9 +29,32 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-950 `}
       >
-        <div className="flex min-h-screen flex-col bg-zinc-950 ">
+        <div className="flex min-h-screen flex-col w-full max-w-screen-lg mx-auto">
+          <header className="h-[70px] w-full  text-zinc-200 items-center flex justify-center fixed top-0 left-0 right-0 bg-zinc-950/50 backdrop-blur-md  z-10">
+            <div className="flex items-center justify-between w-full max-w-screen-lg mx-auto">
+              <Link href="#home" >
+                Home
+              </Link>
+              <Link href="#projects" >
+                Projetos
+              </Link>
+              <Link href="#about" >
+                Sobre mim
+              </Link>
+              <Link href="#contact" >
+                Contato
+              </Link>
+
+              <div className="flex gap-4">
+                <BsLinkedin />
+                <BsGithub />
+                <BsInstagram />
+              </div>
+            </div>
+          </header>
+
           <Home />
           <Separator className="bg-zinc-600" />
           <Projects />
@@ -38,7 +63,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Separator className="bg-zinc-600" />
           <Contact />
 
-          <footer className="max-w-screen-lg mx-auto w-full p-5">
+          <footer className="w-full p-5">
             <span className="text-zinc-400 text-sm">
               @ 2024 Augusto Sousa
             </span>
