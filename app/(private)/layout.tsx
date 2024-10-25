@@ -26,7 +26,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                             <div className="flex gap-5 items-center">
                                 <h1 className="uppercase text-lg font-semibold flex gap-2 items-center">
                                     <AiFillCode className="fill-primary" size={20} />
-                                    Augusto Sousa
+                                    <span className="mt-[1.5px]">
+                                        Augusto Sousa
+                                    </span>
                                 </h1>
                                 <Link href="/messages" >
                                     Mensagens
