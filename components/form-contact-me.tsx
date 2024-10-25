@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "./ui/textarea"
+import { CreateMessage } from "@/actions/messages"
 
 const formSchema = z.object({
     name: z.string().min(2, {
@@ -38,8 +39,21 @@ export function FormContactMe() {
         resolver: zodResolver(formSchema),
     })
 
-    const onSubmit = (data: any) => {
-        console.log(data)
+    const onSubmit = async (data: any) => {
+        try {
+            await CreateMessage({
+                message: {
+                    name: data.name as string,
+                    email: data.email as string,
+                    phone: data.phone as string,
+                    message: data.message as string,
+                }
+            })
+            form.reset();
+        } catch (error) {
+            console.log(error)
+        }
+
     }
 
     return (
@@ -100,7 +114,9 @@ export function FormContactMe() {
                         </FormItem>
                     )}
                 />
-                <Button type="submit">Submit</Button>
+                <Button type="submit" className="max-sm:w-full">
+                    Enviar
+                </Button>
             </form>
         </Form>
     )
