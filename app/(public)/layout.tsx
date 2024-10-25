@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Oxanium } from "next/font/google";
 import "../globals.css"
 import Projects from "./@projects/page";
 import Home from "./@home/page";
@@ -11,33 +11,28 @@ import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
 import RightMenun from "@/components/right-menu";
 import { AiFillCode } from "react-icons/ai";
 
-const geistSans = localFont({
-  src: "../fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "../fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+const oxanium = Oxanium({
+  weight: ['400', '600', "800"],
+  subsets: ["latin"],
+  style: ["normal"]
+})
 
 export const metadata: Metadata = {
   title: "Augusto Sousa",
   description: "Desenvolvedor Front-End",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout() {
   return (
     <html lang="pt-br" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-950`}
+        className={`${oxanium.className} antialiased bg-zinc-950`}
       >
         <div className="flex flex-1 h-full flex-col w-full overflow-hidden">
           <header className="h-[70px] w-full max-sm:px-4  text-zinc-200 items-center flex justify-center fixed top-0 left-0 right-0 bg-zinc-950/50 backdrop-blur-md  z-10">
             <div className="flex items-center justify-between w-full max-w-screen-lg mx-auto">
               <h1 className="uppercase text-lg font-semibold flex gap-2 items-center">
-              <AiFillCode className="fill-primary" size={22}/>
+              <AiFillCode className="fill-primary" size={20}/>
               Augusto Sousa
               </h1>
               <Link href="#home" className="max-sm:hidden">

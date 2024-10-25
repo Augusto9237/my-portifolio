@@ -3,14 +3,13 @@ import {
     Card,
     CardContent,
     CardDescription,
-    CardFooter,
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
 
 export default function CardMessages(message: MessageProps) {
     return (
-        <Card className="bg-zinc-200 max-h-[400px] overflow-hidden">
+        <Card className="bg-zinc-800 border-zinc-700 max-h-[400px] overflow-hidden">
             <CardHeader>
                 <CardTitle>{message.message.name}</CardTitle>
                 <CardDescription>{message.message.email}</CardDescription>
