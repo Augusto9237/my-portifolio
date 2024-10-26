@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button"
 import {
     Form,
     FormControl,
-    FormDescription,
     FormField,
     FormItem,
     FormLabel,
@@ -59,7 +58,7 @@ export function FormContactMe() {
 
     return (
         <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="max-sm:space-y-5 space-y-8">
                 <FormField
                     control={form.control}
                     name="name"

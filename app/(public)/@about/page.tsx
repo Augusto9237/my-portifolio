@@ -1,7 +1,7 @@
 export default function About() {
     return (
         <section id="about" className="min-h-screen text-white flex flex-col w-full max-w-screen-lg mx-auto max-md:px-4 max-md:mt-5 overflow-x-hidden">
-            <div className="flex max-md:flex-col w-full mt-28">
+            <div className="flex max-md:flex-col w-full max-sm:mt-20 mt-28">
                 <div className="w-full">
                     <h1 className="font-bold text-3xl uppercase">About me</h1>
                 </div>
