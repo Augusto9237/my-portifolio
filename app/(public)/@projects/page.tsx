@@ -27,7 +27,7 @@ export default function Projects() {
                         </div>
                     </div>
                     <div className="flex-1 flex flex-col gap-8 justify-center">
-                        <h2 className="text-3xl font-semibold">Promotional landing page for our favorite show</h2>
+                        <h2 className="text-3xl font-semibold">Auto Tech - Acessoríos automotivos</h2>
 
                         <p className="text-zinc-400 max-md:text-justify">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.

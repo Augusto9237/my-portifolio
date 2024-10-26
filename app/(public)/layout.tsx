@@ -28,7 +28,7 @@ export default function RootLayout() {
       <body
         className={`${oxanium.className} antialiased bg-zinc-950`}
       >
-        <div className="flex flex-1 h-full flex-col w-full overflow-hidden">
+        <div className="relative flex flex-1 h-full flex-col w-full overflow-hidden">
           <header className="h-[70px] w-full max-sm:px-4  text-zinc-200 items-center flex justify-center fixed top-0 left-0 right-0 bg-zinc-950/50 backdrop-blur-md  z-10">
             <div className="flex items-center justify-between w-full max-w-screen-lg mx-auto">
               <h1 className="uppercase text-lg font-semibold flex gap-2 items-center">
@@ -70,7 +70,7 @@ export default function RootLayout() {
           <Separator className="bg-zinc-600" />
           <Contact />
 
-          <footer className="w-full p-5 mx-auto text-center">
+          <footer className="absolute w-full p-5 mx-auto text-center bottom-0">
             <span className="text-zinc-400 text-sm">
               @ 2024 Augusto Sousa
             </span>

@@ -10,13 +10,16 @@ import {
 import { Menu } from "lucide-react"
 import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
+import { Button } from "./ui/button";
 
 
 export default function RightMenun() {
     return (
         <Sheet>
-            <SheetTrigger>
-                <Menu />
+            <SheetTrigger asChild>
+                <Button size='icon' variant='ghost'>
+                    <Menu />
+                </Button>
             </SheetTrigger>
             <SheetContent>
                 <aside className="flex flex-col items-center justify-between h-full w-full">

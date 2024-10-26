@@ -17,6 +17,7 @@ import {
 import { Input } from "@/components/ui/input"
 import { Textarea } from "./ui/textarea"
 import { CreateMessage } from "@/actions/messages"
+import { Send } from "lucide-react"
 
 const formSchema = z.object({
     name: z.string().min(2, {
@@ -114,8 +115,11 @@ export function FormContactMe() {
                         </FormItem>
                     )}
                 />
-                <Button type="submit" className="max-sm:w-full">
-                    Enviar
+                <Button type="submit" className="max-sm:w-full items-center gap-1 uppercase">
+                    <Send size={15} />
+                    <div className="mt-[2px]">
+                        Enviar
+                    </div>
                 </Button>
             </form>
         </Form>
