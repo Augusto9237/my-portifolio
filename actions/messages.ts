@@ -24,8 +24,8 @@ export const CreateMessage = async (message: MessageProps) => {
     revalidatePath('/messages')
 }
 
-export const GetMessages = async () => {
-    const messages = await prismaClient.messages.findMany({})
+export async function GetMessages() {
+    const messages = await prismaClient.messages.findMany()
 
-    return { messages: messages }
+    return { messages }
 }
