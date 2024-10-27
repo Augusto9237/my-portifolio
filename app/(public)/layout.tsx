@@ -11,6 +11,10 @@ import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
 import RightMenun from "@/components/right-menu";
 import { AiFillCode } from "react-icons/ai";
 
+import { ToastContainer} from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.min.css';
+
 const oxanium = Oxanium({
   weight: ['400', '600', "800"],
   subsets: ["latin"],
@@ -28,6 +32,7 @@ export default function RootLayout() {
       <body
         className={`${oxanium.className} antialiased bg-zinc-950`}
       >
+        <ToastContainer />
         <div className="relative flex flex-1 h-full flex-col w-full overflow-hidden">
           <header className="h-[70px] w-full max-sm:px-4  text-zinc-200 items-center flex justify-center fixed top-0 left-0 right-0 bg-zinc-950/50 backdrop-blur-md  z-10">
             <div className="flex items-center justify-between w-full max-w-screen-lg mx-auto">

@@ -5,6 +5,7 @@ import { BsGithub } from "react-icons/bs";
 import { FaNodeJs, FaReact } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { SiPrisma } from "react-icons/si";
+import { SiMercadopago } from "react-icons/si";
 
 export default function Projects() {
     return (
@@ -20,17 +21,22 @@ export default function Projects() {
                 <div className="flex max-md:flex-col w-full gap-8">
                     <div className="p-5 flex-1 flex flex-col bg-zinc-800 overflow-hidden justify-center rounded-md">
                         <span className=" bg-zinc-950 text-white text-[14px]  px-4 py-1 max-w-fit rounded-xl mb-5">
-                            Ecommerce
+                            E-commerce
                         </span>
                         <div className="max-md:px-2 px-4">
                             <CarouselProject />
                         </div>
                     </div>
-                    <div className="flex-1 flex flex-col gap-8 justify-center">
-                        <h2 className="text-3xl font-semibold">Auto Tech - Acessoríos automotivos</h2>
+                    <div className="flex-1 flex flex-col gap-5 justify-center">
+                        <h2 className="text-3xl font-semibold">Auto Tech – E-commerce de Som e Eletrônicos Automotivos</h2>
 
                         <p className="text-zinc-400 max-md:text-justify">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.
+                            O Auto Tech é um e-commerce especializado em acessórios, som e eletrônicos automotivos, desenvolvido por mim, utilizando tecnologias modernas e escaláveis.<br />                            
+                            Funcionalidades:
+                            Catálogo de produtos por categorias.
+                            Carrinho de compras com cálculo de frete.
+                            Checkout seguro com Mercado Pago.
+                            Painel administrativo para gerenciamento de produtos e pedidos.
                         </p>
                         <div className="text-sm text-zinc-400">
                             <span>Tecnologias utilizadas:</span>
@@ -55,10 +61,14 @@ export default function Projects() {
                                     <SiPrisma />
                                     Prisma
                                 </span>
+                                <span className="flex gap-1 items-center">
+                                    <SiMercadopago/>
+                                    Mercado pago
+                                </span>
                             </div>
                         </div>
 
-                        <div className="flex gap-5 items-center">
+                        <div className="flex gap-5 items-center mt-5">
                             <Link href="/" className="flex gap-2 text-bold items-center text-primary">
                                 <span className="leading-tight">
                                     LIVE DEMO

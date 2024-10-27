@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Home() {
     return (
         <section id="home" className="min-h-screen text-white flex flex-col w-full max-w-screen-lg mx-auto max-md:px-4 max-md:mt-5">
-            <main className="flex max-md:flex-col max-md:gap-5 w-full flex-1 items-center justify-center">
+            <main className="flex max-md:flex-col max-md:gap-5 gap-12 w-full flex-1 items-center justify-center">
                 <div className="max-sm:pt-20 w-full flex flex-col">
 
                     <div className="flex flex-col">
@@ -16,8 +16,8 @@ export default function Home() {
                         <h1 className="text-3xl font-bold">Desenvolverdor Full Stack</h1>
                     </div>
 
-                    <p className="text-zinc-300 text-[14px] mb-5">
-                        ntro text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    <p className="text-zinc-400 mb-5 text-justify">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis et quidem modi quos totam assumenda ratione ipsa consequatur? Tempora dignissimos porro nobis ut aspernatur debitis placeat culpa impedit veritatis ducimus?
                     </p>
                     
                     <Link href="#projects">
@@ -31,7 +31,7 @@ export default function Home() {
 
                 </div>
                 <div className="w-full flex justify-center">
-                    <Image src="https://github.com/Augusto9237.png" alt="avatar" width={350} height={350} className="rounded-lg" />
+                    <Image src="https://github.com/Augusto9237.png" alt="avatar" width={350} height={350} className="rounded-lg w-full" />
                 </div>
             </main>
 
