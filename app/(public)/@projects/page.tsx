@@ -7,6 +7,18 @@ import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { SiPrisma } from "react-icons/si";
 import { SiMercadopago } from "react-icons/si";
 
+const projectsImages = [
+    {
+        id: "1",
+        images: [
+            "/tela-inicial.png",
+            "/tela-detalhes.png",
+            "/tela-carrinho.png",
+            "/tela-checkout.png",
+        ]
+    },
+]
+
 export default function Projects() {
     return (
         <section id="projects" className="min-h-screen text-white flex flex-col w-full max-w-screen-lg mx-auto max-md:px-4 max-md:mt-5 overflow-x-hidden">
@@ -24,14 +36,14 @@ export default function Projects() {
                             E-commerce
                         </span>
                         <div className="max-md:px-2 px-4">
-                            <CarouselProject />
+                            <CarouselProject images={projectsImages[0].images} />
                         </div>
                     </div>
                     <div className="flex-1 flex flex-col gap-5 justify-center">
                         <h2 className="text-3xl font-semibold">Auto Tech – E-commerce de Som e Eletrônicos Automotivos</h2>
 
                         <p className="text-zinc-400 max-md:text-justify">
-                            O Auto Tech é um e-commerce especializado em acessórios, som e eletrônicos automotivos, desenvolvido por mim, utilizando tecnologias modernas e escaláveis.<br />                            
+                            O Auto Tech é um e-commerce especializado em acessórios, som e eletrônicos automotivos, desenvolvido por mim, utilizando tecnologias modernas e escaláveis.<br />
                             Funcionalidades:
                             Catálogo de produtos por categorias.
                             Carrinho de compras com cálculo de frete.
@@ -62,7 +74,7 @@ export default function Projects() {
                                     Prisma
                                 </span>
                                 <span className="flex gap-1 items-center">
-                                    <SiMercadopago/>
+                                    <SiMercadopago />
                                     Mercado pago
                                 </span>
                             </div>
