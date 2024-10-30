@@ -19,7 +19,7 @@ export function CarouselProject({ images }: CarouselProps) {
                 {images.map((img, index) => (
                     <CarouselItem key={index}>
                         <div className="w-full h-[300px] rounded-md">
-                            <Image src={img} height={0} width={0} className="w-full h-full object-cover" sizes="100vw" alt="" />
+                            <Image src={img} height={0} width={0} className="w-full h-full object-contain" sizes="100vw" alt="" />
                         </div>
                     </CarouselItem>
                 ))}
