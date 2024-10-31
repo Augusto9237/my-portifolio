@@ -32,11 +32,11 @@ export default function Projects() {
 
             <main className="flex flex-col w-full py-8 gap-8">
                 <div className="flex max-md:flex-col w-full gap-8">
-                    <div className="p-5 flex-1 flex flex-col bg-zinc-800 overflow-hidden justify-center rounded-md">
+                    <div className="p-4 flex-1 flex flex-col bg-zinc-800 overflow-hidden justify-center rounded-md">
                         <span className=" bg-zinc-950 text-white text-[14px]  px-4 py-1 max-w-fit rounded-xl mb-5">
                             E-commerce
                         </span>
-                        <div className="max-md:px-2 px-4">
+                        <div className="max-md:px-2 px-3.5">
                             <CarouselProject images={projectsImages[0].images} />
                         </div>
                     </div>
@@ -82,15 +82,15 @@ export default function Projects() {
                         </div>
 
                         <div className="flex gap-5 items-center mt-5">
-                            <Link href="/" className="flex gap-2 text-bold items-center text-primary">
-                                <span className="leading-tight">
+                            <Link href="https://auto-tech-store.vercel.app" target="_blank" className="flex gap-2 text-bold items-center text-primary">
+                                <span className="leading-tight mt-[2px]">
                                     LIVE DEMO
                                 </span>
                                 <SquareArrowOutUpRight size={17} />
                             </Link>
 
-                            <Link href="/" className="flex gap-2 text-bold items-center text-primary">
-                                <span className="leading-tight">
+                            <Link href="https://github.com/Augusto9237/auto-tech-store" target="_blank" className="flex gap-2 text-bold items-center text-primary">
+                                <span className="leading-tight mt-[2px]">
                                     SEE ON GITHUB
                                 </span>
                                 <BsGithub size={17} />
