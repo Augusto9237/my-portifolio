@@ -15,6 +15,7 @@ const projectsImages = [
             "/tela-detalhes.png",
             "/tela-carrinho.png",
             "/tela-checkout.png",
+            "/tela_dashboard.png"
         ]
     },
 ]
