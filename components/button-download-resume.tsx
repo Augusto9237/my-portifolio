@@ -3,7 +3,8 @@ import { RiDownload2Fill } from 'react-icons/ri';
 import { Button } from './ui/button'
 
 export default function ButtonDownloadResume() {
-    const downloadPDF = async () => {
+
+    async function downloadPDF() {
         try {
             const response = await fetch('https://tdpicjcnerrhbfxjnwjp.supabase.co/storage/v1/object/sign/assets/Profile%20(1).pdf?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhc3NldHMvUHJvZmlsZSAoMSkucGRmIiwiaWF0IjoxNzMwNjk0NDU4LCJleHAiOjE3NjIyMzA0NTh9.Vyi3aQbdeW-o9rA5tf-6IZrfTrCXhi1Op1_ivTVdK7w&t=2024-11-04T04%3A27%3A37.490Z', {
                 method: 'GET',
@@ -31,7 +32,7 @@ export default function ButtonDownloadResume() {
     };
 
     return (
-        <Button variant="secondary" onAuxClick={downloadPDF} className='flex gap-2 items-center font-semibold'>
+        <Button variant="secondary" onClick={downloadPDF} className='flex gap-2 items-center font-semibold'>
             <RiDownload2Fill />
             Download Currículo
         </Button>
