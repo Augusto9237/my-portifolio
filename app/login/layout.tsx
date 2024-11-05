@@ -23,7 +23,7 @@ export default function RootLayout({
         {children}
         <footer className="absolute w-full p-5 mx-auto text-center bottom-0">
           <span className="text-zinc-400 text-sm">
-            ©2024 Augusto Sousa
+            ©Todos os Diretos Reservados - Augusto Sousa
           </span>
         </footer>
       </body>

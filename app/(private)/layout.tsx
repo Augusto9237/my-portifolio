@@ -30,23 +30,25 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                                         Augusto Sousa
                                     </span>
                                 </h1>
-                                <Link href="/messages" >
+
+                                <Link href="/messages" className="max-md:hidden">
                                     Mensagens
                                 </Link>
-                                <Link href="/project" >
+                                <Link href="/project" className="max-md:hidden">
                                     Projetos
                                 </Link>
                             </div>
-                            <Link href="/profile" >
+                            <Link href="/profile" className="max-md:hidden">
                                 Perfil
                             </Link>
                         </div>
                     </header>
 
                     {children}
-                    <footer className="max-w-screen-lg mx-auto w-full p-5">
+
+                    <footer className="absolute w-full p-5 mx-auto text-center bottom-0">
                         <span className="text-zinc-400 text-sm">
-                            @ 2024 Augusto Sousa
+                            ©Todos os Diretos Reservados - Augusto Sousa
                         </span>
                     </footer>
                 </div>

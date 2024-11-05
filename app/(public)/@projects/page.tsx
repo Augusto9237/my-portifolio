@@ -11,11 +11,11 @@ const projectsImages = [
     {
         id: "1",
         images: [
-            "/tela-inicial.png",
-            "/tela-detalhes.png",
-            "/tela-carrinho.png",
-            "/tela-checkout.png",
-            "/tela_dashboard.png"
+            "https://tdpicjcnerrhbfxjnwjp.supabase.co/storage/v1/object/sign/assets/tela-inicial.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhc3NldHMvdGVsYS1pbmljaWFsLnBuZyIsImlhdCI6MTczMDgwOTcyNCwiZXhwIjoxNzYyMzQ1NzI0fQ.k2bK4sfSSIRbu6I8qLPVLlYhOBx6E58p38_7EeKRqSQ&t=2024-11-05T12%3A28%3A45.083Z",
+            "https://tdpicjcnerrhbfxjnwjp.supabase.co/storage/v1/object/sign/assets/tela-detalhes.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhc3NldHMvdGVsYS1kZXRhbGhlcy5wbmciLCJpYXQiOjE3MzA4MDk3OTgsImV4cCI6MTc2MjM0NTc5OH0.1-nqhkb4wYRN6bU82sDwxS_JnDX5sXKvZodOeN7wJ24&t=2024-11-05T12%3A29%3A59.340Z",
+            "https://tdpicjcnerrhbfxjnwjp.supabase.co/storage/v1/object/sign/assets/tela-carrinho.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhc3NldHMvdGVsYS1jYXJyaW5oby5wbmciLCJpYXQiOjE3MzA4MDk5MTQsImV4cCI6MTc2MjM0NTkxNH0.uk7hZOCVexQ9XpteFNtz57kqttkFtvhZrvp7f642Tzk&t=2024-11-05T12%3A31%3A55.345Z",
+            "https://tdpicjcnerrhbfxjnwjp.supabase.co/storage/v1/object/sign/assets/tela-checkout.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhc3NldHMvdGVsYS1jaGVja291dC5wbmciLCJpYXQiOjE3MzA4MDk5MzIsImV4cCI6MTc2MjM0NTkzMn0.IzIYxDI8B4pv4QxGiSG3vFARFovcrc9wxcndpG7lDYk&t=2024-11-05T12%3A32%3A13.092Z",
+            "https://tdpicjcnerrhbfxjnwjp.supabase.co/storage/v1/object/sign/assets/tela_dashboard.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhc3NldHMvdGVsYV9kYXNoYm9hcmQucG5nIiwiaWF0IjoxNzMwODA5OTYwLCJleHAiOjE3NjIzNDU5NjB9.snnfR-_3va5id_7eGVSf7g3XqT28vG_h083AR0Ot6uM&t=2024-11-05T12%3A32%3A41.768Z"
         ]
     },
 ]
@@ -33,7 +33,7 @@ export default function Projects() {
             <main className="flex flex-col w-full py-8 gap-8">
                 <div className="flex max-md:flex-col w-full gap-8">
                     <div className="p-4 flex-1 flex flex-col bg-zinc-800 overflow-hidden justify-center rounded-md">
-                        <span className=" bg-zinc-950 text-white text-[14px] ml-2 px-4 py-1 max-w-fit rounded-xl mb-5">
+                        <span className=" bg-zinc-950 text-white text-[14px] ml-2 px-4 py-1  rounded-xl mb-5 min-w-fit max-w-fit text-nowrap">
                             E-commerce
                         </span>
                         <div className="max-md:px-2 px-3.5">
@@ -41,7 +41,7 @@ export default function Projects() {
                         </div>
                     </div>
                     <div className="flex-1 flex flex-col gap-5 justify-center">
-                        <h2 className="text-3xl font-semibold">Auto Tech – E-commerce de Som e Eletrônicos Automotivos</h2>
+                        <h2 className="max-md:text-2xl text-3xl font-semibold">Auto Tech – Som e Eletrônicos Automotivos</h2>
 
                         <p className="text-zinc-400 max-md:text-justify">
                             O Auto Tech é um e-commerce especializado em acessórios, som e eletrônicos automotivos, desenvolvido por mim, utilizando tecnologias modernas e escaláveis.<br />

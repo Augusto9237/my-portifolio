@@ -9,15 +9,15 @@ export default function Home() {
     return (
         <section id="home" className="min-h-screen text-white flex flex-col w-full max-w-screen-lg mx-auto max-md:px-4 max-md:mt-5 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-500/10 from-10% via-zinc-950 via-65%  to-zinc-950 to-90%">
             <main className="flex max-md:flex-col max-md:gap-5 gap-12 w-full flex-1 items-center justify-center">
-                <div className="max-sm:pt-20 w-full flex flex-col">
+                <div className="max-sm:pt-20 max-md:mb-5 w-full flex flex-col">
 
                     <div className="flex flex-col">
                         <span className="">Olá! Meu nome é <span className="font-bold">Augusto Sousa</span> e eu sou</span>
-                        <h1 className="text-3xl font-bold">Desenvolverdor Full Stack</h1>
+                        <h1 className="max-md:text-2xl text-3xl font-bold">Desenvolverdor Full Stack</h1>
                     </div>
 
                     <p className="text-zinc-400 mb-5 text-justify">
-                        Sempre fui fascinado pela experiência do usuário e pela estética das interfaces intuitivas, e hoje me especializo em front-end e mobile, criando experiências de usuário elegantes e funcionais. Além disso, domino o back-end, garantindo soluções completas e integradas. Sempre em busca de inovação, estou pronto para novos desafios e projetos que valorizem tanto o design quanto a funcionalidade.
+                    Sou facisnado por criar experiências de usuário elegantes e intuitivas, com foco em front-end e mobile. Também domino o back-end, o que me permite entregar soluções completas e integradas. Sempre buscando inovação, estou pronto para novos desafios que unam design e funcionalidade
                     </p>
                     
                     <Link href="#projects">
@@ -35,8 +35,8 @@ export default function Home() {
                 </div>
             </main>
 
-            <footer className="max-w-screen-lg w-full mx-auto space-y-4 max-md:pt-5 pb-8">
-                <h2>Habilidades</h2>
+            <footer className="max-w-screen-lg w-full mx-auto space-y-4 max-md:pt-8 pb-8">
+                <h2 className="font-semibold">Habilidades</h2>
                 <CarouselSkills />
 
             </footer>

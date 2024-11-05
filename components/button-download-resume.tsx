@@ -32,9 +32,11 @@ export default function ButtonDownloadResume() {
     };
 
     return (
-        <Button variant="secondary" onClick={downloadPDF} className='flex gap-2 items-center font-semibold'>
+        <Button variant="secondary" onClick={downloadPDF} className='flex gap-2 items-center font-semibold uppercase'>
             <RiDownload2Fill />
-            Download Currículo
+            <span className='mt-1'>
+                Download Currículo
+            </span>
         </Button>
     )
 }
