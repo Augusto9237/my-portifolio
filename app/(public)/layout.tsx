@@ -23,7 +23,7 @@ const oxanium = Oxanium({
 
 export const metadata: Metadata = {
   title: "Augusto Sousa",
-  description: "Desenvolvedor Front-End",
+  description: "Desenvolvedor Full Stack",
 };
 
 export default function RootLayout() {
@@ -34,7 +34,7 @@ export default function RootLayout() {
       >
         <ToastContainer />
         <div className="relative flex flex-1 h-full flex-col w-full overflow-hidden">
-          <header className="h-[70px] w-full max-sm:px-4  text-zinc-200 items-center flex justify-center fixed top-0 left-0 right-0 bg-zinc-950/50 backdrop-blur-md  z-10">
+          <header className="h-[70px] w-full max-sm:px-4  text-white items-center flex justify-center fixed top-0 left-0 right-0 bg-zinc-950/50 backdrop-blur-md  z-10">
             <div className="flex items-center justify-between w-full max-w-screen-lg mx-auto">
               <h1 className="uppercase text-lg font-extrabold flex gap-1 items-center">
                 <AiFillCode className="fill-primary" size={20} />
@@ -82,7 +82,7 @@ export default function RootLayout() {
 
           <footer className="absolute w-full p-5 mx-auto text-center bottom-0">
             <span className="text-zinc-400 text-sm">
-              ©2024 Augusto Sousa
+              ©Todos os Diretos Reservados - Augusto Sousa
             </span>
           </footer>
         </div>

@@ -17,7 +17,7 @@ export default function Home() {
                     </div>
 
                     <p className="text-zinc-400 mb-5 text-justify">
-                        Formado em Sistemas de Informação. Minha paixão por design e interfaces intuitivas começou na adolescência, e hoje me especializo em front-end, criando experiências de usuário elegantes e funcionais. Além disso, domino o back-end, garantindo soluções completas e integradas. Sempre em busca de inovação, estou pronto para novos desafios e projetos que valorizem tanto o design quanto a funcionalidade.
+                        Sempre fui fascinado pela experiência do usuário e pela estética das interfaces intuitivas, e hoje me especializo em front-end e mobile, criando experiências de usuário elegantes e funcionais. Além disso, domino o back-end, garantindo soluções completas e integradas. Sempre em busca de inovação, estou pronto para novos desafios e projetos que valorizem tanto o design quanto a funcionalidade.
                     </p>
                     
                     <Link href="#projects">
@@ -36,7 +36,7 @@ export default function Home() {
             </main>
 
             <footer className="max-w-screen-lg w-full mx-auto space-y-4 max-md:pt-5 pb-8">
-                <h2>Tecnologias</h2>
+                <h2>Habilidades</h2>
                 <CarouselSkills />
 
             </footer>

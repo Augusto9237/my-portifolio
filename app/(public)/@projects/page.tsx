@@ -2,7 +2,7 @@ import { CarouselProject } from "@/components/carrousel-projects";
 import { SquareArrowOutUpRight } from "lucide-react";
 import Link from "next/link";
 import { BsGithub } from "react-icons/bs";
-import { FaNodeJs, FaReact } from "react-icons/fa";
+import { FaAws, FaNodeJs, FaReact } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { SiPrisma } from "react-icons/si";
 import { SiMercadopago } from "react-icons/si";
@@ -33,7 +33,7 @@ export default function Projects() {
             <main className="flex flex-col w-full py-8 gap-8">
                 <div className="flex max-md:flex-col w-full gap-8">
                     <div className="p-4 flex-1 flex flex-col bg-zinc-800 overflow-hidden justify-center rounded-md">
-                        <span className=" bg-zinc-950 text-white text-[14px]  px-4 py-1 max-w-fit rounded-xl mb-5">
+                        <span className=" bg-zinc-950 text-white text-[14px] ml-2 px-4 py-1 max-w-fit rounded-xl mb-5">
                             E-commerce
                         </span>
                         <div className="max-md:px-2 px-3.5">
@@ -53,7 +53,7 @@ export default function Projects() {
                         </p>
                         <div className="text-sm text-zinc-400">
                             <span>Tecnologias utilizadas:</span>
-                            <div className="flex gap-2 flex-wrap">
+                            <div className="flex gap-3 flex-wrap">
                                 <span className="flex gap-1 items-center">
                                     <FaReact />
                                     React.js
@@ -75,8 +75,13 @@ export default function Projects() {
                                     Prisma
                                 </span>
                                 <span className="flex gap-1 items-center">
+                                    <FaAws />
+                                    S3
+                                </span>
+
+                                <span className="flex gap-1 items-center">
                                     <SiMercadopago />
-                                    Mercado pago
+                                    Mercado Pago
                                 </span>
                             </div>
                         </div>

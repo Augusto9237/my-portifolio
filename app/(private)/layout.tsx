@@ -12,7 +12,7 @@ const oxanium = Oxanium({
 
 export const metadata: Metadata = {
     title: "Augusto Sousa - Admin",
-    description: "Desenvolvedor Front-End",
+    description: "Desenvolvedor Full Stack",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
