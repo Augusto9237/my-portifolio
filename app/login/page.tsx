@@ -10,7 +10,7 @@ export default function Login() {
   return (
     <div className='w-full h-screen max-h-screen overflow-hidden flex'>
       <div className='w-full flex flex-col items-center justify-center flex-1 max-md:px-8 max-md:bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-500/20 from-5% via-zinc-950 via-65%  to-zinc-950 to-90%'>
-        <div className='w-full flex flex-col justify-center items-center mb-8 md:hidden'>
+        <div className='w-full flex flex-col justify-center items-center mb-8 -mt-24 md:hidden'>
           <h1 className="uppercase font-extrabold flex gap-1 items-center">
             <AiFillCode className="fill-primary" size={18} />
             <span className="mt-[2px] text-white">

@@ -36,12 +36,12 @@ export default function RootLayout() {
         <div className="relative flex flex-1 h-full flex-col w-full overflow-hidden">
           <header className="h-[70px] w-full max-sm:px-4  text-white items-center flex justify-center fixed top-0 left-0 right-0 bg-zinc-950/50 backdrop-blur-md  z-10">
             <div className="flex items-center justify-between w-full max-w-screen-lg mx-auto">
-              <h1 className="uppercase text-lg font-extrabold flex gap-1 items-center">
+              <h2 className="uppercase text-lg font-extrabold flex gap-1 items-center">
                 <AiFillCode className="fill-primary" size={20} />
                 <span className="mt-[2px]">
                   Augusto Sousa
                 </span>
-              </h1>
+              </h2>
               <Link href="#home" className="max-sm:hidden">
                 Home
               </Link>
@@ -73,11 +73,11 @@ export default function RootLayout() {
           </header>
 
           <Home />
-          <Separator className="bg-zinc-600" />
+          <Separator className="bg-zinc-700" />
           <Projects />
-          <Separator className="bg-zinc-600" />
+          <Separator className="bg-zinc-700" />
           <About />
-          <Separator className="bg-zinc-600" />
+          <Separator className="bg-zinc-700" />
           <Contact />
 
           <footer className="absolute w-full p-5 mx-auto text-center bottom-0">
