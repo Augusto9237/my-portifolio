@@ -1,6 +1,6 @@
 import { CarouselSkills } from "@/components/carrousel-skills";
 import { Button } from "@/components/ui/button";
-import {ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,13 +13,12 @@ export default function Home() {
 
                     <div className="flex flex-col">
                         <span className="">Olá! Meu nome é <span className="font-bold">Augusto Sousa</span> e eu sou</span>
-                        <h1 className="max-md:text-2xl text-3xl font-bold">Desenvolverdor Full Stack</h1>
+                        <h1 className="max-md:text-2xl text-3xl font-bold uppercase">Desenvolverdor Full Stack</h1>
                     </div>
-
                     <p className="text-zinc-400 mb-5 text-justify">
-                    Sou facisnado por criar experiências de usuário elegantes e intuitivas, com foco em front-end e mobile. Também domino o back-end, o que me permite entregar soluções completas e integradas. Sempre buscando inovação, estou pronto para novos desafios que unam design e funcionalidade
+                        Unindo estética e performance: do front-end ao back-end, desenvolvo soluções integradas que transformam ideias em experiências completas.
                     </p>
-                    
+
                     <Link href="#projects">
                         <Button className="max-sm:w-full gap-1 uppercase">
                             <div className="mt-[2px]">
