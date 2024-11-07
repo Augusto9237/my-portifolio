@@ -34,7 +34,7 @@ export default function RootLayout() {
       >
         <ToastContainer />
         <div className="relative flex flex-1 h-full flex-col w-full overflow-hidden">
-          <header className="h-[70px] w-full max-sm:px-4  text-white items-center flex justify-center fixed top-0 left-0 right-0 bg-zinc-950/50 backdrop-blur-md  z-10">
+          <header className="h-[70px] w-full max-xl:px-5 text-white items-center flex justify-center fixed top-0 left-0 right-0 bg-zinc-950/50 backdrop-blur-md  z-10">
             <div className="flex items-center justify-between w-full max-w-screen-lg mx-auto">
               <h2 className="uppercase text-lg font-extrabold flex gap-1 items-center">
                 <AiFillCode className="fill-primary" size={20} />

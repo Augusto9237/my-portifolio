@@ -44,7 +44,7 @@ export function CarouselSkills() {
         >
             <CarouselContent className="scroll-smooth">
                 {skills.map((item, index) => (
-                    <CarouselItem key={index} className="max-w-[200px] w-full animate-out flex">
+                    <CarouselItem key={index} className="max-w-[200px] w-full  flex">
                         <div className="border border-zinc-400 text-zinc-400 text-[14px] p-2 rounded-md flex items-center justify-center gap-2 w-full">
                             {item === "React.js" && <>
                                 <FaReact />

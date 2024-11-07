@@ -4,7 +4,7 @@ import Link from "next/link";
 import { BsGithub } from "react-icons/bs";
 import { FaAws, FaNodeJs, FaReact } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { SiPrisma } from "react-icons/si";
+import { SiPrisma, SiShadcnui, SiTypescript } from "react-icons/si";
 import { SiMercadopago } from "react-icons/si";
 
 const projectsImages = [
@@ -22,7 +22,7 @@ const projectsImages = [
 
 export default function Projects() {
     return (
-        <section id="projects" className="min-h-screen text-white flex flex-col w-full max-w-screen-lg mx-auto max-md:px-4 max-md:mt-5 overflow-x-hidden">
+        <section id="projects" className="min-h-screen text-white flex flex-col w-full max-w-screen-lg mx-auto max-xl:px-5 max-md:mt-5 overflow-x-hidden">
             <header className="flex flex-col gap-2 justify-center max-sm:mt-20 mt-28 ">
                 <h1 className="font-bold max-md:text-2xl text-3xl uppercase">Principais projetos</h1>
             </header>
@@ -40,7 +40,7 @@ export default function Projects() {
                     <div className="flex-1 flex flex-col gap-5 justify-center">
                         <h2 className="max-md:text-2xl text-3xl font-semibold">Auto Tech – Som e Eletrônicos Automotivos</h2>
 
-                        <p className="text-zinc-400 max-md:text-justify">
+                        <p className="text-zinc-400 text-justify">
                             O Auto Tech é um e-commerce especializado em acessórios, som e eletrônicos automotivos, desenvolvido por mim, utilizando tecnologias modernas e escaláveis.<br />
                             Funcionalidades:
                             Catálogo de produtos por categorias.
@@ -48,29 +48,42 @@ export default function Projects() {
                             Checkout seguro com Mercado Pago.
                             Painel administrativo para gerenciamento de produtos e pedidos.
                         </p>
-                        <div className="text-sm text-zinc-400">
-                            <span>Tecnologias utilizadas:</span>
+                        <div className="text-zinc-400 gap-2">
+                            <h2 className="font-semibold text-white">Tecnologias utilizadas</h2>
                             <div className="flex gap-3 flex-wrap">
                                 <span className="flex gap-1 items-center">
                                     <FaReact />
-                                    React.js
+                                    ReactJs
                                 </span>
                                 <span className="flex gap-1 items-center">
                                     <RiNextjsFill />
-                                    Next.js
+                                    NextJs
                                 </span>
                                 <span className="flex gap-1 items-center">
                                     <RiTailwindCssFill />
                                     TailwindCss
                                 </span>
+
+                                <span className="flex gap-1 items-center">
+                                    <SiShadcnui />
+                                    Shadcn/ui
+                                </span>
+
                                 <span className="flex gap-1 items-center">
                                     <FaNodeJs />
-                                    Node.js
+                                    NodeJs
                                 </span>
+
+                                <span className="flex gap-1 items-center">
+                                    <SiTypescript />
+                                    TypeScript
+                                </span>
+
                                 <span className="flex gap-1 items-center">
                                     <SiPrisma />
                                     Prisma
                                 </span>
+
                                 <span className="flex gap-1 items-center">
                                     <FaAws />
                                     S3

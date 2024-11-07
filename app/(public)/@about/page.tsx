@@ -7,7 +7,7 @@ import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
 
 export default function About() {
     return (
-        <section id="about" className="min-h-screen relative text-white flex flex-col w-full max-w-screen-lg mx-auto max-md:px-4 max-md:mt-5 overflow-x-hidden">
+        <section id="about" className="min-h-screen relative text-white flex flex-col w-full max-w-screen-lg mx-auto max-xl:px-5  max-md:mt-5 overflow-x-hidden">
             <h1 className="font-bold max-md:text-2xl text-3xl uppercase max-sm:mt-20 mt-28 mb-5">Sobre mim</h1>
             <div className="flex gap-8 max-md:flex-col w-full h-full relative">
                 <div className="w-full flex flex-col h-full">
@@ -46,13 +46,13 @@ export default function About() {
                         Graduado em Sistemas de Informação pela Universidade Mauricio de Nassau (UNINASSAU) em 2021.
                     </p>
                     <Separator className="bg-zinc-700 my-4" />
-                    <h2 className="font-semibold">Conhecimentos</h2>
+                    <h2 className="font-semibold">Habilidades</h2>
                     <p className="text-zinc-400 text-justify">
-                        ReactJs, React Native, NextJs, AngularJs, NodeJs, NestJs, JavaScript, TypeScript, Graphql, PHP, Prisma, Firebase, Docker, Github, HTML, CSS, TailwindCss e StyledComponents.
+                        ReactJs, React Native, NextJs, AngularJs, NodeJs, NestJs, JavaScript, TypeScript, Graphql, PHP, Prisma, Firebase, Docker, Github, HTML, CSS, TailwindCss, StyledComponents, CSS-in-JS, Figma e Photoshop.
                     </p>
                 </div>
 
-                <div className="md:hidden w-full flex flex-col mb-8">
+                <div className="md:hidden w-full flex flex-col">
                     <ButtonDownloadResume />
                 </div>
             </div>

@@ -4,9 +4,9 @@ import { BsWhatsapp } from "react-icons/bs";
 
 export default function Contact() {
     return (
-        <section id="contact" className="min-h-screen text-white flex flex-col w-full max-w-screen-lg mx-auto max-md:px-4 max-md:mt-5 overflow-x-hidden">
+        <section id="contact" className="min-h-screen text-white flex flex-col w-full max-w-screen-lg mx-auto max-xl:px-5  max-md:mt-5 overflow-x-hidden">
             <div className="flex max-md:flex-col w-full max-sm:mt-20 mt-28">
-                <div className="w-full h-full flex flex-col">
+                <div className="w-full h-full flex flex-col max-md:mb-5">
                     <h1 className="font-bold max-md:text-2xl text-3xl uppercase">Entre em contato</h1>
 
                     <div className="flex flex-col max-md:hidden">
