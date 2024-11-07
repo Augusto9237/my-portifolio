@@ -37,10 +37,10 @@ export default function Projects() {
                             <CarouselProject images={projectsImages[0].images} />
                         </div>
                     </div>
-                    <div className="flex-1 flex flex-col gap-5 justify-center">
-                        <h2 className="max-md:text-2xl text-3xl font-semibold">Auto Tech – Som e Eletrônicos Automotivos</h2>
+                    <div className="flex-1 flex flex-col justify-center">
+                        <h2 className="font-semibold">Auto Tech – Som e Eletrônicos Automotivos</h2>
 
-                        <p className="text-zinc-400 text-justify">
+                        <p className="text-zinc-400 text-justify mb-5">
                             O Auto Tech é um e-commerce especializado em acessórios, som e eletrônicos automotivos, desenvolvido por mim, utilizando tecnologias modernas e escaláveis.<br />
                             Funcionalidades:
                             Catálogo de produtos por categorias.

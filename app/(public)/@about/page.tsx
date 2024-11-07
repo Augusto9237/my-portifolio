@@ -48,11 +48,11 @@ export default function About() {
                     <Separator className="bg-zinc-700 my-4" />
                     <h2 className="font-semibold">Habilidades</h2>
                     <p className="text-zinc-400 text-justify">
-                        ReactJs, React Native, NextJs, AngularJs, NodeJs, NestJs, JavaScript, TypeScript, Graphql, PHP, Prisma, Firebase, Docker, Github, HTML, CSS, TailwindCss, StyledComponents, CSS-in-JS, Figma e Photoshop.
+                        ReactJs, React Native, NextJs, AngularJs, NodeJs, NestJs, JavaScript, TypeScript, Graphql, PHP, Prisma, Firebase, Docker, SQL, MySQL, MongoDb, SQlite Github, HTML, CSS, TailwindCss, StyledComponents, CSS-in-JS, Figma e Photoshop.
                     </p>
                 </div>
 
-                <div className="md:hidden w-full flex flex-col">
+                <div className="md:hidden w-full flex flex-col max-md:mb-5">
                     <ButtonDownloadResume />
                 </div>
             </div>
