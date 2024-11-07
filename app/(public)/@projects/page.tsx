@@ -86,14 +86,14 @@ export default function Projects() {
                         <div className="flex gap-5 items-center mt-5">
                             <Link href="https://auto-tech-store.vercel.app" target="_blank" className="flex gap-2 text-bold items-center text-primary">
                                 <span className="leading-tight mt-[2px]">
-                                    LIVE DEMO
+                                    DEMO
                                 </span>
                                 <SquareArrowOutUpRight size={17} />
                             </Link>
 
                             <Link href="https://github.com/Augusto9237/auto-tech-store" target="_blank" className="flex gap-2 text-bold items-center text-primary">
                                 <span className="leading-tight mt-[2px]">
-                                    SEE ON GITHUB
+                                    REPOSITÓRIO
                                 </span>
                                 <BsGithub size={17} />
                             </Link>
