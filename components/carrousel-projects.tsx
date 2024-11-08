@@ -18,8 +18,8 @@ export function CarouselProject({ images }: CarouselProps) {
             <CarouselContent>
                 {images.map((img, index) => (
                     <CarouselItem key={index}>
-                        <div className="w-full max-:h-[220px] h-[300px] rounded-md flex items-center">
-                            <Image src={img} height={0} width={0} className="w-full h-[80%] max-lg:h-auto object-fill" sizes="100vw" alt="" />
+                        <div className="w-full max-h-[220px] h-full rounded-md flex items-center">
+                            <Image src={img} height={0} width={0} className="w-full h-full max-lg:h-auto object-fill" sizes="100vw" alt="" />
                         </div>
                     </CarouselItem>
                 ))}

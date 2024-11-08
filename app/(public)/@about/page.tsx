@@ -52,7 +52,7 @@ export default function About() {
                     </p>
                 </div>
 
-                <div className="md:hidden w-full flex flex-col max-md:mb-5">
+                <div className="md:hidden w-full flex flex-col max-md:mb-8">
                     <ButtonDownloadResume />
                 </div>
             </div>
