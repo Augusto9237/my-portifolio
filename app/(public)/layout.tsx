@@ -8,10 +8,11 @@ import About from "./@about/page";
 import Contact from "./@contact/page";
 
 
-import { ToastContainer} from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.min.css';
 import { Header } from "@/components/header";
+import { ContainerPage } from "@/components/container-page";
 
 const oxanium = Oxanium({
   weight: ['400', '600', "800"],
@@ -31,7 +32,7 @@ export default function RootLayout() {
         className={`${oxanium.className} antialiased bg-zinc-950`}
       >
         <ToastContainer />
-        <div className="relative flex flex-1 h-full flex-col w-full overflow-hidden">
+        {/* <div className="relative flex flex-1 h-full flex-col w-full overflow-hidden">
        <Header/>
 
           <Home />
@@ -47,7 +48,8 @@ export default function RootLayout() {
               ©Todos os Diretos Reservados - Augusto Sousa
             </span>
           </footer>
-        </div>
+        </div> */}
+        <ContainerPage />
       </body>
     </html>
   );

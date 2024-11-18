@@ -33,7 +33,6 @@ export function CarouselSkills() {
             plugins={[
                 Autoplay({
                     delay: 3000,
-
                 }),
             ]}
             opts={{
@@ -48,16 +47,16 @@ export function CarouselSkills() {
                         <div className="border border-zinc-400 text-zinc-400 text-[14px] p-2 rounded-md flex items-center justify-center gap-2 w-full">
                             {item === "React.js" && <>
                                 <FaReact />
-                                React.js
+                                ReactJs
                             </>
                             }
                             {item === "ReactNative.js" && <>
                                 <FaReact />
-                                ReactNative.js
+                                ReactNativeJs
                             </>}
                             {item === "Next.js" && <>
                                 <RiNextjsFill />
-                                Next.js
+                                NextJs
                             </>}
                             {item === "TailwindCss" && <>
                                 <RiTailwindCssFill />
@@ -65,7 +64,7 @@ export function CarouselSkills() {
                             </>}
                             {item === "Node.js" && <>
                                 <FaNodeJs />
-                                Node.js
+                                NodeJs
                             </>}
                             {item === "Prisma" && <>
                                 <SiPrisma />
@@ -85,7 +84,7 @@ export function CarouselSkills() {
                             </>}
                             {item === "Angular.js" && <>
                                 <FaAngular />
-                                Angular.js
+                                AngularJs
                             </>}
                         </div>
                         <div className="w-4  h-full"/>
