@@ -5,7 +5,6 @@ import "../globals.css"
 import { ToastContainer } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.min.css';
-import { Header } from "@/components/header";
 import { ContainerPage } from "@/components/container-page";
 
 const oxanium = Oxanium({
