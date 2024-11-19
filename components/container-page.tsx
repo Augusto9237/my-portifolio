@@ -4,9 +4,11 @@ import { Header } from "./header";
 import { Separator } from "./ui/separator";
 import Projects from "@/app/(public)/@projects/page";
 import About from "@/app/(public)/@about/page";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 import { useEffect, useRef, useState } from "react";
 import Contact from "@/app/(public)/@contact/page";
+import Link from "next/link";
 
 export function ContainerPage() {
     const home = useRef(null);
@@ -90,14 +92,18 @@ export function ContainerPage() {
             <Separator className="bg-zinc-700" />
 
             <div ref={about} id="about">
-            <About />
+                <About />
             </div>
 
             <Separator className="bg-zinc-700" />
 
             <div ref={contact} id="contact">
-            <Contact />
+                <Contact />
             </div>
+
+            <Link href={"/"} className="fixed bottom-8 right-1/4 -mr-32 max-md:hidden">
+                <IoLogoWhatsapp size={34} className="fill-green-600 stroke-slate-50"/>
+            </Link>
 
             <footer className="absolute w-full p-5 mx-auto text-center bottom-0">
                 <span className="text-zinc-400 text-sm">

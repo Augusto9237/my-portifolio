@@ -1,9 +1,9 @@
 'use client'
 import Link from "next/link";
 import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
-import RightMenun from "@/components/right-menu";
 import { AiFillCode } from "react-icons/ai";
 import clsx from "clsx";
+import RightMenu from "./right-menu";
 
 interface HeaderProps {
     hash: string;
@@ -47,7 +47,7 @@ export function Header({ hash }: HeaderProps) {
             </div>
 
             <div className="md:hidden">
-                <RightMenun />
+                <RightMenu hash={hash}/>
             </div>
         </header>
     )
