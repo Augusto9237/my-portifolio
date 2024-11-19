@@ -11,8 +11,10 @@ import Contact from "@/app/(public)/@contact/page";
 
 export function ContainerPage() {
     const home = useRef(null);
-    const params = useParams()
-    const [hash, setHash] = useState('');
+    const projects = useRef(null);
+    const about = useRef(null);
+    const contact = useRef(null);
+
     const [visibleDivId, setVisibleDivId] = useState('');
 
 
@@ -34,17 +36,44 @@ export function ContainerPage() {
         );
 
         const homeDiv = home.current;
+        const projectsDiv = projects.current;
+        const aboutDiv = about.current;
+        const contactDiv = contact.current;
+
         if (homeDiv) {
             observer.observe(homeDiv); // Começa a observar a div
         }
+
+        if (projectsDiv) {
+            observer.observe(projectsDiv); // Começa a observar a div
+        }
+
+        if (aboutDiv) {
+            observer.observe(aboutDiv); // Começa a observar a div
+        }
+
+        if (contactDiv) {
+            observer.observe(contactDiv); // Começa a observar a div
+        }
+
 
 
         return () => {
             if (homeDiv) {
                 observer.unobserve(homeDiv);
             }
+            if (projectsDiv) {
+                observer.unobserve(projectsDiv);
+            }
+            if (aboutDiv) {
+                observer.unobserve(aboutDiv);
+            }
+
+            if (contactDiv) {
+                observer.unobserve(contactDiv);
+            }
         };
-    }, [home]);
+    }, [home, projects, about, contact]);
 
     return (
         <div className="relative flex flex-1 h-full min-h-screeen flex-col w-full overflow-hidden">
@@ -52,12 +81,24 @@ export function ContainerPage() {
             <div ref={home} id="home">
                 <Home />
             </div>
+
             <Separator className="bg-zinc-700" />
-            <Projects />
+
+            <div ref={projects} id="projects">
+                <Projects />
+            </div>
+
             <Separator className="bg-zinc-700" />
+
+            <div ref={about} id="about">
             <About />
+            </div>
+
             <Separator className="bg-zinc-700" />
+
+            <div ref={contact} id="contact">
             <Contact />
+            </div>
 
             <footer className="absolute w-full p-5 mx-auto text-center bottom-0">
                 <span className="text-zinc-400 text-sm">
