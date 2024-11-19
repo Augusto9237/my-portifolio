@@ -5,7 +5,6 @@ import { Separator } from "./ui/separator";
 import Projects from "@/app/(public)/@projects/page";
 import About from "@/app/(public)/@about/page";
 
-import { useParams } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import Contact from "@/app/(public)/@contact/page";
 
