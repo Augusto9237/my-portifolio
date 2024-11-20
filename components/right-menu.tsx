@@ -41,7 +41,7 @@ export default function RightMenu({ hash }: RightMenuProps) {
                         </Link>
                     </div>
 
-                    <div className="flex flex-col gap-2 items-center">
+                    <div className="flex flex-col gap-4 items-center">
                         <Link href="https://api.whatsapp.com/message/5GZHRZGRNMOGI1?autoload=1&app_absent=0" target="_blank" className="flex gap-2 items-center text-green-500">
                             <IoLogoWhatsapp size={18} className="fill-green-600 stroke-slate-50" />
                             <span>Falar comigo no WhatsApp</span>
