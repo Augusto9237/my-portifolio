@@ -6,7 +6,7 @@ export default function ButtonDownloadResume() {
 
     async function downloadPDF() {
         try {
-            const response = await fetch('https://tdpicjcnerrhbfxjnwjp.supabase.co/storage/v1/object/sign/assets/Profile%20(1).pdf?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhc3NldHMvUHJvZmlsZSAoMSkucGRmIiwiaWF0IjoxNzMwNjk0NDU4LCJleHAiOjE3NjIyMzA0NTh9.Vyi3aQbdeW-o9rA5tf-6IZrfTrCXhi1Op1_ivTVdK7w&t=2024-11-04T04%3A27%3A37.490Z', {
+            const response = await fetch('https://tdpicjcnerrhbfxjnwjp.supabase.co/storage/v1/object/sign/assets/CURRICULO%20AUGUSTO%20-%20FULL%20STACK.pdf?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhc3NldHMvQ1VSUklDVUxPIEFVR1VTVE8gLSBGVUxMIFNUQUNLLnBkZiIsImlhdCI6MTczMjA2OTAzMSwiZXhwIjoxNzYzNjA1MDMxfQ.0F7zsjrrIsR64QQqtIZg-8j7eVMHZOi36Zx4BfxlXVE&t=2024-11-20T02%3A17%3A10.353Z', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/pdf',

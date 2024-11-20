@@ -10,6 +10,14 @@ import { useEffect, useRef, useState } from "react";
 import Contact from "@/app/(public)/@contact/page";
 import Link from "next/link";
 
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
+} from "@/components/ui/tooltip"
+
+
 export function ContainerPage() {
     const home = useRef(null);
     const projects = useRef(null);
@@ -101,9 +109,18 @@ export function ContainerPage() {
                 <Contact />
             </div>
 
-            <Link href={"/"} className="fixed bottom-8 right-1/4 -mr-32 max-md:hidden">
-                <IoLogoWhatsapp size={34} className="fill-green-600 stroke-slate-50"/>
-            </Link>
+            <TooltipProvider>
+                <Tooltip>
+                    <TooltipTrigger asChild>
+                        <Link href="https://api.whatsapp.com/message/5GZHRZGRNMOGI1?autoload=1&app_absent=0" target="_blank" className="fixed bottom-8 max-lg:right-[2%] right-[15%] max-md:hidden">
+                            <IoLogoWhatsapp size={34} className="fill-green-600 stroke-slate-50" />
+                        </Link>
+                    </TooltipTrigger>
+                    <TooltipContent className=" bg-green-400/10 border border-green-700/70">
+                        <p className="font-semibold text-white text-sm">Falar comigo no WhatsApp</p>
+                    </TooltipContent>
+                </Tooltip>
+            </TooltipProvider>
 
             <footer className="absolute w-full p-5 mx-auto text-center bottom-0">
                 <span className="text-zinc-400 text-sm">

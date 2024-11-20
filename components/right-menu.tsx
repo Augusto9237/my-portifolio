@@ -9,6 +9,7 @@ import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import clsx from "clsx";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 interface RightMenuProps {
     hash: string;
@@ -40,10 +41,17 @@ export default function RightMenu({ hash }: RightMenuProps) {
                         </Link>
                     </div>
 
-                    <div className="flex gap-4">
-                        <BsLinkedin />
-                        <BsGithub />
-                        <BsInstagram />
+                    <div className="flex flex-col gap-2 items-center">
+                        <Link href="https://api.whatsapp.com/message/5GZHRZGRNMOGI1?autoload=1&app_absent=0" target="_blank" className="flex gap-2 items-center text-green-500">
+                            <IoLogoWhatsapp size={18} className="fill-green-600 stroke-slate-50" />
+                            <span>Falar comigo no WhatsApp</span>
+                        </Link>
+
+                        <div className="flex gap-4">
+                            <BsLinkedin />
+                            <BsGithub />
+                            <BsInstagram />
+                        </div>
                     </div>
                 </aside>
             </SheetContent>
