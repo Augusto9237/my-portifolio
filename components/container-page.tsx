@@ -116,8 +116,8 @@ export function ContainerPage() {
                             <IoLogoWhatsapp size={34} className="fill-green-600 stroke-slate-50" />
                         </Link>
                     </TooltipTrigger>
-                    <TooltipContent className=" bg-green-400/10 border border-green-700/70">
-                        <p className="font-semibold text-white text-sm">Falar comigo no WhatsApp</p>
+                    <TooltipContent className=" bg-green-800/15 border border-green-700/70">
+                        <p className="font-semibold text-green-600/75 text-sm">Falar comigo no WhatsApp</p>
                     </TooltipContent>
                 </Tooltip>
             </TooltipProvider>
