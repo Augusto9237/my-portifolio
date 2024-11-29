@@ -1,6 +1,6 @@
 'use client'
 import * as React from "react"
-import Autoplay from "embla-carousel-autoplay"
+import AutoScroll from "embla-carousel-auto-scroll"
 
 import { BiLogoTypescript } from "react-icons/bi";
 import { FaAngular, FaNodeJs, FaReact } from "react-icons/fa";
@@ -31,9 +31,12 @@ export function CarouselSkills() {
     return (
         <Carousel
             plugins={[
-                Autoplay({
-                    delay: 3000,
-                }),
+                AutoScroll({
+                    speed: 0.5,
+                    startDelay: 0,
+                    stopOnInteraction: false
+                    
+                })
             ]}
             opts={{
                 align: "start",
@@ -87,7 +90,7 @@ export function CarouselSkills() {
                                 AngularJs
                             </>}
                         </div>
-                        <div className="w-4  h-full"/>
+                        <div className="w-4  h-full" />
                     </CarouselItem>
                 ))}
             </CarouselContent>
