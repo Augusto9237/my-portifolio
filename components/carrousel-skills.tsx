@@ -35,7 +35,6 @@ export function CarouselSkills() {
                     speed: 0.5,
                     startDelay: 0,
                     stopOnInteraction: false
-                    
                 })
             ]}
             opts={{
