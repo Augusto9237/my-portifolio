@@ -89,7 +89,7 @@ export function CarouselSkills() {
                                 AngularJs
                             </>}
                         </div>
-                        <div className="w-4  h-full" />
+                        <div className="w-4 max-sm:w-2 h-full" />
                     </CarouselItem>
                 ))}
             </CarouselContent>

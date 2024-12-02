@@ -1,4 +1,5 @@
 import { CarouselProject } from "@/components/carrousel-projects";
+import { Badge } from "@/components/ui/badge";
 import { SquareArrowOutUpRight } from "lucide-react";
 import Link from "next/link";
 import { BsGithub } from "react-icons/bs";
@@ -29,16 +30,17 @@ export default function Projects() {
 
             <main className="flex flex-col w-full py-8 gap-8">
                 <div className="flex max-md:flex-col w-full gap-8">
-                    <div className="p-4 flex-1 flex flex-col bg-zinc-800 overflow-hidden justify-center rounded-md">
-                        <span className=" bg-zinc-950 text-white text-[14px] ml-2 px-4 py-1  rounded-xl mb-5 min-w-fit max-w-fit text-nowrap">
+                    <div className="p-4 flex-1 flex flex-col bg-zinc-800 overflow-hidden justify-center gap-4 max-md:gap-2 rounded-md">
+                        <Badge>
                             E-commerce
-                        </span>
+                        </Badge>
+
                         <div className="max-md:px-2 px-3.5">
                             <CarouselProject images={projectsImages[0].images} />
                         </div>
                     </div>
                     <div className="flex-1 flex flex-col justify-center">
-                        <h2 className="font-semibold">Auto Tech – Som e Eletrônicos Automotivos</h2>
+                        <h2 className="font-semibold">Auto Tech</h2>
 
                         <p className="text-zinc-400 text-justify mb-5">
                             O Auto Tech é um e-commerce especializado em acessórios, som e eletrônicos automotivos, desenvolvido por mim, utilizando tecnologias modernas e escaláveis.<br />
