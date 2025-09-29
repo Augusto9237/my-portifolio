@@ -1,7 +1,7 @@
 import ButtonDownloadResume from "@/components/button-download-resume";
 import { CarouselSkills } from "@/components/carrousel-skills";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ChevronRight } from "lucide-react";
+import {ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
