@@ -43,6 +43,7 @@ export function CarouselSkills() {
             }}
             className="w-full"
         >
+            <h2 className="font-semibold z-50 mb-5">Principais habilidades</h2>
             <CarouselContent className="scroll-smooth">
                 {skills.map((item, index) => (
                     <CarouselItem key={index} className="max-w-[200px] w-full  flex">

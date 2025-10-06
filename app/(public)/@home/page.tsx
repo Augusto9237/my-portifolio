@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function Home() {
     return (
-        <section id="home" className="min-h-screen max-h-screen overflow-hidden text-white flex flex-col w-full max-w-screen-lg mx-auto max-xl:px-5 max-md:mt-5 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-500/10 from-10% via-zinc-950 via-65%  to-zinc-950 to-90%">
+        <section id="home" className="min-h-screen relative max-h-screen overflow-hidden text-white flex flex-col w-full max-w-screen-lg mx-auto max-xl:px-5 max-md:mt-5 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-500/10 from-10% via-zinc-950 via-65%  to-zinc-950 to-90%">
             <main className="flex max-md:flex-col max-md:gap-5 gap-12 w-full flex-1 items-center justify-center">
                 <div className="max-sm:pt-14 max-md:mb-5 w-full flex flex-col">
                     <div className="flex flex-col">
@@ -31,15 +31,13 @@ export default function Home() {
                     </div>
 
                 </div>
-                <div className="w-full flex justify-center overflow-hidden max-sm:max-h-[400px] max-md:max-h-[600px]">
-                    <Image src="/perfil.png" alt="avatar" width={0} height={0} sizes='100vw' className="rounded-lg w-full  object-contain max-md:object-cover flex-1 mix-blend-lighten rounded-2xl" />
+                <div className="w-full flex justify-center overflow-hidden max-sm:max-h-[400px] max-md:max-h-[600px] h-screen pt-10">
+                    <Image src="/perfil.png" alt="avatar" width={0} height={0} sizes='100vw' className="rounded-lg w-full h-screen object-cover flex-1 mix-blend-lighten rounded-2xl" />
                 </div>
             </main>
 
-            <footer className="max-w-screen-lg w-full mx-auto space-y-4  pb-8">
-                <h2 className="font-semibold">Principais habilidades</h2>
+            <footer className="max-w-screen-lg w-full mx-auto space-y-4 flex flex-col justify-end pb-10 h-64 absolute right-0 left-0 bottom-0 bg-gradient-to-t from-zinc-950 to-zinc-200/0">
                 <CarouselSkills />
-
             </footer>
         </section>
     )
